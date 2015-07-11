@@ -8,7 +8,7 @@ export default class NextApp{
     const PORT = 8080;
 
     // We need a function which handles requests and send response
-    function handleRequest(req, res) {
+    async function handleRequest(req, res) {
       let path = req.url.slice(1);
 
       System.import(`./app/${path}.js`).then(Resource => {
@@ -19,12 +19,9 @@ export default class NextApp{
         console.log('Error', error);
       });
 
-      var testa = async function() {
-        return 'huuuuu';
-      }
-
       try {
-        var test = await testa();
+        var test = await System.import(`./app/${path}.js`);
+        console.log('aassyyncc', new test.default().get());
       } catch (error) {
         console.log('catch error', error);
       }
