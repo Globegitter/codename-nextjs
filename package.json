@@ -1,0 +1,24 @@
+{
+  "name": "codename-nextjs",
+  "version": "0.1.0",
+  "description": "The next NodeJS backend building on classes, ES6 modules, threads and conventions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "backend",
+    "server"
+  ],
+  "author": "mpadourek",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^5.6.14",
+    "babel-core": "^5.6.17",
+    "es6-module-loader": "^0.17.3",
+  },
+  "devDependencies": {
+    "babel-eslint": "^3.1.23",
+    "eslint": "^0.24.1",
+  }
+}
