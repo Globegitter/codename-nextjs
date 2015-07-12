@@ -24,7 +24,11 @@
     "space-before-function-parentheses": [2, {
                                             "anonymous" : "always",
                                             "named" : "never"
-                                          }]
+                                          }],
+    "no-var"                            : 2,
+    "no-this-before-super"              : 2,
+    "constructor-super"                 : 2,
+    "object-shorthand"                  : 2
   },
   "env": {
     "node": true,

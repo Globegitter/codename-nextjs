@@ -4,6 +4,6 @@ require("babel/register")({
   stage: 0
 });
 
-let App = require('./app.js');
-let server = new App();
+let NextServer = require('./server.js');
+let server = new NextServer();
 server.start();
