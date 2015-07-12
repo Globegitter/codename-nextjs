@@ -1,9 +1,5 @@
 'use strict';
 
-require("babel/register")({
-  stage: 0
-});
-
-let NextServer = require('./server.js');
-let server = new NextServer();
+let NordServer = require('nord').Server;
+let server = new NordServer();
 server.start();
