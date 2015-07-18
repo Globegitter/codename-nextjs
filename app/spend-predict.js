@@ -1,6 +1,8 @@
+// var {Resource} = require('nord'); // eslint-disable-line
+import {Resource} from 'nord';
 
-export default class SpendPredict {
+export default class SpendPredict extends Resource{
   get() {
-    return 'Wooohhhhooo this is the get function!';
+    return this.res.json({text: 'woohhooo this is in the get function!'});
   }
 }
